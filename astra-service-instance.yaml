@@ -1,0 +1,43 @@
+apiVersion: servicecatalog.k8s.io/v1beta1
+kind: ServiceInstance
+metadata:
+  name: devdb-gcp
+  namespace: default
+spec:
+  parameters:
+    capacity_units: 1
+    cloud_provider: GCP
+    keyspace: petclinic
+    region: us-east1
+  serviceClassExternalName: astra-database
+  servicePlanExternalName: C10
+---
+apiVersion: servicecatalog.k8s.io/v1beta1
+kind: ServiceInstance
+metadata:
+  name: devdb-aws
+  namespace: default
+spec:
+  parameters:
+    capacity_units: 1
+    cloud_provider: AWS
+    keyspace: petclinic
+    region: us-east-1
+  serviceClassExternalName: astra-database
+  servicePlanExternalName: C10
+---
+apiVersion: servicecatalog.k8s.io/v1beta1
+kind: ServiceInstance
+metadata:
+  name: devdb-azure
+  namespace: default
+spec:
+  parameters:
+    capacity_units: 1
+    cloud_provider: AZURE
+    keyspace: petclinic
+    region: eastus
+  serviceClassExternalName: astra-database
+  servicePlanExternalName: C10
+
+
