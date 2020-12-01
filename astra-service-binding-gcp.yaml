@@ -1,0 +1,9 @@
+apiVersion: servicecatalog.k8s.io/v1beta1
+kind: ServiceBinding
+metadata:
+  name: gcp
+spec:
+  externalID: b946701e-c773-4332-8935-8212e8bdb412
+  instanceRef:
+    name: gcp
+    secretName: astra-creds

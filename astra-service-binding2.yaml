@@ -1,29 +1,29 @@
 apiVersion: servicecatalog.k8s.io/v1beta1
 kind: ServiceBinding
 metadata:
-  name: devdb-gcp
+  name: devdb-gcp11
 spec:
   externalID: b946701e-c773-4332-8935-8212e8bdb412
   instanceRef:
     name: devdb-gcp
-  secretName: devdb-gcp
+    secretName: astra-creds
 ---
 apiVersion: servicecatalog.k8s.io/v1beta1
 kind: ServiceBinding
 metadata:
-  name: devdb-aws
+  name: devdb-aws11
 spec:
   externalID: b946701e-c773-4332-8935-8212e8bdb412
   instanceRef:
     name: devdb-aws
-  secretName: devdb-aws
+    secretName: astra-creds
 ---
 apiVersion: servicecatalog.k8s.io/v1beta1
 kind: ServiceBinding
 metadata:
-  name: devdb-azure
+  name: devdb-azure11
 spec:
   externalID: b946701e-c773-4332-8935-8212e8bdb412
   instanceRef:
     name: devdb-azure
-  secretName: devdb-azure
+    secretName: astra-creds
