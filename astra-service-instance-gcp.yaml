@@ -10,4 +10,4 @@ spec:
     keyspace: petclinic
     region: us-east1
   serviceClassExternalName: astra-database
-  servicePlanExternalName: C10
+  servicePlanExternalName: developer
